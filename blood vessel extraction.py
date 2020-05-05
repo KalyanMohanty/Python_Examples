@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-from
+
 import sklearn
 img = cv2.imread('C:/Users/Kalyan Mohanty/Documents/MATLAB/kalyan/good.jpg')
 b,g,r = cv2.split(img)
@@ -42,7 +42,7 @@ img = skimage.io.imread('image.jpg')
 hist = np.histogram(img, bins=256, range=(0, 256))[0]
 # get threshold
 th = max_entropy.max_entropy(hist)
-print th
+print(th)
 
 ret,th1 = cv2.threshold(img,th,255,cv2.THRESH_BINARY)
 
