@@ -69,6 +69,10 @@ for dirnames, dirpath, filenames in l1:
     print('File name:', filenames)
     print()
 
+for dirname, _, filenames in os.walk('rename'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
+print()
 #How to get complete information about a file
 '''
 st_mode= protection mode, 
