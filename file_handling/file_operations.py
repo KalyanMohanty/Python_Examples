@@ -35,7 +35,7 @@ f = open('test2.txt','w+')
 f = open('test2.txt','a+')
         # It won't over write the dat
         # If specied file is not available then this will create the file
-#f = open('test3.txt','x')
+f = open('test3.txt','x')
         # Ment for write operation
         #File should not be already available
         # If file already available the FileExistsError will be raised
